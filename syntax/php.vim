@@ -8,7 +8,7 @@ if exists('b:current_syntax')
 endif
 
 if !exists("main_syntax")
-    let main_syntax = 'blade'
+    let main_syntax = 'php'
 endif
 
 runtime! syntax/html.vim
@@ -66,8 +66,8 @@ hi def link bladeComment        Comment
 hi def link bladeTodo           Todo
 hi def link bladeKeyword        Statement
 
-let b:current_syntax = 'blade'
+let b:current_syntax = 'php'
 
-if exists('main_syntax') && main_syntax == 'blade'
+if exists('main_syntax') && main_syntax == 'php'
     unlet main_syntax
 endif
